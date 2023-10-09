@@ -1,0 +1,193 @@
+body {
+    /*背景图片*/
+    background-image: url("../images/background.jpg");
+    /*图片不重复*/
+    background-repeat: no-repeat;
+    /*背景覆盖窗口*/
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /*删除无序标题原点*/
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+/*头标题导航页*/
+.title-header ul {
+    /*这是一个css3属性，用于将一个HTML元素设置为flex容器*/
+    /*在flex布局中，子元素的位置、方向和对齐方式都可以灵活控制*/
+    /*在这里，它将ul元素设置为flex容器，使得其直接子元素(ul)可以在水平上居中显示*/
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    /*这是一个CSS3属性，用于指定flex容器的子元素在主轴上的对其方式*/
+    /*在这里，它将元素的子元素(li)在水平方向上居中对齐*/
+    justify-content: center;
+    height: 60px;
+}
+
+.title-header li {
+    /*分别表示li元素的外边距和内边距*/
+    /*外边距元素与其周围元素的距离，内边距是元素内容与其边框的距离*/
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.title-header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.welcome {
+    height: 180px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.welcome .BikiniBottom {
+    font-size: 40px;
+    /*字体加粗*/
+    font-weight: bold;
+    /*彩虹色字体*/
+    background: linear-gradient(90deg, #ECE2EB, #F8D6DD, pink, #FFEBD8, #EFB1C7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.welcome .welcome-word {
+    font-size: 20px;
+    background: linear-gradient(90deg, pink, coral, indianred, cornflowerblue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*作者标签*/
+.writer {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    /*设置透明背景*/
+    background-color: rgba(255, 255, 255, 0.4);
+    /*设置圆角属性*/
+    border-radius: 25px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.writer .id-head {
+    position: fixed;
+    display: flex;
+    height: 30px;
+}
+
+.id-head li {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.id-head a {
+    text-decoration: none;
+    color: black;
+}
+
+.id-head a:hover {
+    text-decoration: underline;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.writer .text {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.writer .name {
+    font-size: 40px;
+    color: orange;
+    /*字体加粗*/
+    font-family: sans-serif;
+}
+
+.writer ul {
+    text-align: center;
+}
+
+.writer .signature {
+    color: black;
+    font-size: 18px;
+}
+
+.id-content {
+    position: fixed;
+    display: flex;
+    margin-top: 40px;
+}
+
+.id-content li {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.id-bottom1 .space {
+    margin-right: 23px;
+}
+
+.id-bottom2 .space {
+    margin-right: 23px;
+}
+
+
+.id-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.writer .id-bottom1 {
+    position: fixed;
+    display: flex;
+    margin-top: 360px;
+}
+
+.writer .id-bottom2 {
+    position: fixed;
+    display: flex;
+    margin-top: 395px;
+}
+
+
+.id-bottom1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.id-bottom2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.id-bottom1 a:hover {
+    color: cornflowerblue;
+}
+
+.id-bottom2 a:hover {
+    color: cornflowerblue;
+}

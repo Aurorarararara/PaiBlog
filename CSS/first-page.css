@@ -1,0 +1,70 @@
+body {
+    /*背景图片*/
+    background-image: url("../images/background.jpg");
+    /*图片不重复*/
+    background-repeat: no-repeat;
+    /*背景覆盖窗口*/
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /*删除无序标题原点*/
+    list-style-type: none;
+}
+
+/*头标题导航页*/
+.title-header ul {
+    /*这是一个css3属性，用于将一个HTML元素设置为flex容器*/
+    /*在flex布局中，子元素的位置、方向和对齐方式都可以灵活控制*/
+    /*在这里，它将ul元素设置为flex容器，使得其直接子元素(ul)可以在水平上居中显示*/
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    /*这是一个CSS3属性，用于指定flex容器的子元素在主轴上的对其方式*/
+    /*在这里，它将元素的子元素(li)在水平方向上居中对齐*/
+    justify-content: center;
+    height: 60px;
+}
+
+.title-header li {
+    /*分别表示li元素的外边距和内边距*/
+    /*外边距元素与其周围元素的距离，内边距是元素内容与其边框的距离*/
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.title-header ul li a {
+    text-decoration: none;
+    color: black
+}
+
+.welcome {
+    height: 180px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.welcome .BikiniBottom {
+    font-size: 40px;
+    /*字体加粗*/
+    font-weight: bold;
+    /*彩虹色字体*/
+    background: linear-gradient(90deg, #ECE2EB, #F8D6DD, pink, #FFEBD8, #EFB1C7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.welcome .welcome-word {
+    font-size: 20px;
+    background: linear-gradient(90deg, pink, coral, indianred, cornflowerblue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
